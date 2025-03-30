@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマホ料金プラン比較</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+            .then(registration => console.log('Service Worker registered:', registration))
+            .catch(error => console.error('Service Worker registration failed:', error));
+    }
+</script>
+
+</head>
+<body>
+    <header>
+        <h1>スマホ料金プラン比較</h1>
+    </header>
+
+    <main>
+        <section id="filters">
+            <h2>条件設定</h2>
+            <div>
+                <label for="data-usage">必要なデータ容量(GB):</label>
+                <select id="data-usage">
+                    <option value="0.5">0.5</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40以上">40~100</option>
+                    <option value="無制限">無制限</option>
+                </select>
+            </div>
+
+            <div>
+                <label>キャリアを選択:</label>
+                <div class="carrier-options">
+                    <label><input type="checkbox" name="carrier" value="docomo" checked>docomo</label>
+                    <label><input type="checkbox" name="carrier" value="au" checked>au</label>
+                    <label><input type="checkbox" name="carrier" value="SoftBank" checked>SoftBank</label>
+                    <label><input type="checkbox" name="carrier" value="UQ" checked>UQ</label>
+                    <label><input type="checkbox" name="carrier" value="Y!mobile" checked>Y!mobile</label>
+                </div>
+            </div>
+
+            <button id="filter-button">絞り込み</button>
+        </section>
+
+        <section id="results">
+            <h2>利用可能なプラン</h2>
+            <table id="plan-table">
+                <thead>
+                    <tr>
+                        <th>キャリア</th>
+                        <th>プラン名 (容量)</th>
+                        <th>料金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ここにJavaScriptでプラン情報が追加される -->
+                </tbody>
+            </table>
+            <p id="no-results">条件に合うプランが見つかりませんでした。</p>
+        </section>
+
+        <section id="disclaimer">
+            <hr>
+            <p>※ 価格は税込みです。2025年3月31日時点の価格に基づいています。</p>
+            <p>※ 各種割引は考慮していません (通話料、オプション料金等は別途発生)</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

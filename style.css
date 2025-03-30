@@ -1,0 +1,97 @@
+/* style.css (変更なし) */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#filters label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#filters select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#filters .carrier-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#filters .carrier-options label {
+    display: inline-block;
+}
+
+#filter-button {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filter-button:hover {
+    background-color: #4cae4c;
+}
+
+#results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+#results th, #results td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#results th {
+    background-color: #f2f2f2;
+}
+
+#no-results {
+    display: none; /* Initially hidden */
+    color: red;
+}
+
+#disclaimer {
+    font-size: 0.8em;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
