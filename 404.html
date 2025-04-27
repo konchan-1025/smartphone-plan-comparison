@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found - [あなたのサイト名]</title>
+    <style>
+        body {
+            font-family: sans-serif; /* 見やすいフォント */
+            text-align: center;     /* 中央寄せ */
+            padding: 40px;          /* 余白 */
+            background-color: #f8f9fa; /* 少し明るい背景色 */
+            color: #343a40;         /* 濃い目の文字色 */
+            display: flex;          /* コンテンツを中央に配置 */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;      /* 画面いっぱいの高さ */
+            margin: 0;              /* デフォルトのマージン削除 */
+        }
+
+        .container {
+            background-color: #ffffff; /* 白い背景のコンテナ */
+            padding: 40px;
+            border-radius: 8px;     /* 角丸 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 影 */
+            max-width: 600px;       /* 最大幅 */
+            width: 90%;             /* 画面幅に合わせた幅 */
+        }
+
+        h1 {
+            font-size: 5em;         /* 404を大きく表示 */
+            margin-bottom: 0.2em;
+            color: #dc3545;         /* エラーを示す赤っぽい色 */
+        }
+
+        h2 {
+            font-size: 1.8em;       /* 見出しサイズ */
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #6c757d;         /* 少し薄い色 */
+        }
+
+        p {
+            font-size: 1.1em;       /* 段落の文字サイズ */
+            line-height: 1.6;       /* 行間 */
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;  /* ボタンのように表示 */
+            background-color: #007bff; /* 青系のボタン色 */
+            color: white;           /* ボタンの文字色 */
+            padding: 12px 24px;     /* ボタンのパディング */
+            text-decoration: none;  /* 下線なし */
+            border-radius: 5px;     /* ボタンの角丸 */
+            font-size: 1.1em;
+            transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+        }
+
+        a:hover {
+            background-color: #0056b3; /* ホバー時の色 */
+        }
+
+        /* オプション: サイト名やコピーライト表示 */
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #adb5bd; /* 薄い灰色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>ページが見つかりませんでした</h2>
+        <p>
+            お探しのページは移動されたか、削除されたか、<br>
+            またはURLが間違っている可能性があります。
+        </p>
+        <p>以下のボタンからトップページへお戻りください。</p>
+        <a href="/">トップページに戻る</a>
+
+        <!-- サイト名などを表示したい場合は以下のコメントアウトを解除してください -->
+        <!-- <p class="footer-text">© [現在の年] [あなたのサイト名]</p> -->
+    </div>
+</body>
+</html>
